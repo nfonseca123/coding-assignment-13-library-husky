@@ -23,7 +23,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint \"src/**/*.{js,mjs,cjs,ts,tsx}\"",
-    "lint:fix": "eslint --fix \"src/**/*.{js,mjs,cjs,ts,tsx}\""
+    "lint:fix": "eslint --fix \"src/**/*.{js,mjs,cjs,ts,tsx}\"",
+    "format": "prettier --write ."
   },
   "eslintConfig": {
     "extends": [
@@ -48,6 +49,7 @@
     "eslint": "^8.57.1",
     "eslint-plugin-react": "^7.37.4",
     "globals": "^16.0.0",
+    "prettier": "^3.5.3",
     "typescript-eslint": "^8.26.1"
   }
 }
