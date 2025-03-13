@@ -28,11 +28,6 @@
     "format": "prettier --write .",
     "prepare": "husky"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test"
-    }
-  },
   "eslintConfig": {
     "extends": [
       "react-app",
