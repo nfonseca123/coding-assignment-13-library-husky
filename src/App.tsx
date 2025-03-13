@@ -11,7 +11,7 @@ import {
   Table,
   Text,
 } from './components'; // Direct import
-
+let hello = 'Hello World';
 function App() {
   return (
     <div className="App">
