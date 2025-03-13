@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Button label="Hi"></Button>
+        <Button label="This is a button"></Button>
         <Card
           cardTitle="CardTitle"
           cardText="This is the text within the card"
