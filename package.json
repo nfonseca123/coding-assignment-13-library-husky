@@ -25,7 +25,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint \"src/**/*.{js,mjs,cjs,ts,tsx}\"",
     "lint:fix": "eslint --fix \"src/**/*.{js,mjs,cjs,ts,tsx}\"",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky"
   },
   "husky": {
     "hooks": {
