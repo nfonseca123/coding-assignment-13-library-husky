@@ -30,16 +30,20 @@ const StyledDropDown = styled.div<{
     z-index: 1;
   }
 
-  /* Links inside the dropdown */
-  .dropdown-content a {
+  /* Buttons inside the dropdown */
+  .dropdown-content button {
     color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
   }
 
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
+  /* Change color of dropdown buttons on hover */
+  .dropdown-content button:hover {
     background-color: ${(props) =>
       props.disabled ? 'gray' : props.hoverColor};
   }
@@ -75,15 +79,9 @@ const DropDown: React.FC<DropDownProps> = ({
       <div className="dropdown">
         <button className="dropbtn">{dropDownName}</button>
         <div className="dropdown-content">
-          <a href="#" onClick={(e) => e.preventDefault()}>
-            {optionOneText}
-          </a>
-          <a href="#" onClick={(e) => e.preventDefault()}>
-            {optionTwoText}
-          </a>
-          <a href="#" onClick={(e) => e.preventDefault()}>
-            {optionThreeText}
-          </a>
+          <button onClick={(e) => e.preventDefault()}>{optionOneText}</button>
+          <button onClick={(e) => e.preventDefault()}>{optionTwoText}</button>
+          <button onClick={(e) => e.preventDefault()}>{optionThreeText}</button>
         </div>
       </div>
     </StyledDropDown>
