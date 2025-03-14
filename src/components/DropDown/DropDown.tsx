@@ -75,9 +75,9 @@ const DropDown: React.FC<DropDownProps> = ({
       <div className="dropdown">
         <button className="dropbtn">{dropDownName}</button>
         <div className="dropdown-content">
-          <a href="#">{optionOneText}</a>
-          <a href="#">{optionTwoText}</a>
-          <a href="#">{optionThreeText}</a>
+        <a href="#" onClick={(e) => e.preventDefault()}>{optionOneText}</a>
+        <a href="#" onClick={(e) => e.preventDefault()}>{optionTwoText}</a>
+        <a href="#" onClick={(e) => e.preventDefault()}>{optionThreeText}</a>
         </div>
       </div>
     </StyledDropDown>
