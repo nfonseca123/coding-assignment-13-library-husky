@@ -39,6 +39,26 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+### `npm run format`
+
+Formats all files in the src directory using Prettier. This will ensure that your code follows a consistent style.
+
+### `npm run lint`
+
+Runs ESLint on the files in the src directory and checks for code quality issues. It will display any warnings or errors in the console.
+
+### `docker build -t fonseca_noah_coding_assignment13:latest .`
+
+Builds the Docker image for the application using the Dockerfile in the root of the project.
+This will create a Docker image tagged as fonseca_noah_coding_assignment13:latest.
+
+### `docker run -p 8018:80 --name fonseca_noah_coding_assignment13  fonseca_noah_coding_assignment13:latest`
+
+Runs the application in production mode using Docker.
+Open http://localhost:8018 to view it in the browser.
+
+The app will be displayed on port 8018 on your local machine.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
